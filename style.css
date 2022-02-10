@@ -1,0 +1,30 @@
+/*
+COMMENTS  
+These styles are added because I could not find the following in Vanilla Framework:
+1. Top coloured border. Added styles - ox-top-border. 
+2. Dotted Border. There is a solid border in Vanilla Framework. Added styles - ox-dotted-border-top and ox-dotted-border-bottom
+3. The footer position in blog post. I have seen Vertical spacing styles, but I didn't manage to make them work as intended. Added styles - ox-parent-flex and ox-child-flex
+I used !important in order to rewrite existing styles, but usually I try my best to avoid it.
+*/
+
+.ox-top-border {
+    border-top: 3px solid rgb(168, 124, 160) !important;
+}
+
+.ox-dotted-border-top {
+    border-top: 1.5px dotted #979797;
+}
+
+.ox-dotted-border-bottom {
+    border-bottom: 1.5px dotted #979797 !important;
+}
+
+.ox-parent-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.ox-child-flex {
+    align-self: stretch;
+    flex-grow: 1;
+} 
